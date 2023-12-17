@@ -318,6 +318,7 @@ namespace BepInEx.Configuration
 		[MethodImpl(MethodImplOptions.NoInlining)]
 		public static void AddUnityEngineConverters()
 		{
+            /*
 			var colorConverter = new TypeConverter
 			{
 				ConvertToString = (obj, type) => ColorUtility.ToHtmlStringRGBA((Color)obj),
@@ -347,6 +348,7 @@ namespace BepInEx.Configuration
 				ConvertToObject = StringToRect,
 				ConvertToString = RectToString
 			});
+            */
 		}
 
 		private static object StringToRect(string s, Type type)

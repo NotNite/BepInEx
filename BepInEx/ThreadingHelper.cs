@@ -38,7 +38,7 @@ namespace BepInEx
 				go.hideFlags = HideFlags.HideAndDontSave;
 			DontDestroyOnLoad(go);
 			Instance = go.AddComponent<ThreadingHelper>();
-		}
+        }
 
 		/// <summary>
 		/// Queue the delegate to be invoked on the main unity thread. Use to synchronize your threads.

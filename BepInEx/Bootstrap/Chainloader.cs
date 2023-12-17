@@ -45,9 +45,9 @@ namespace BepInEx.Bootstrap
 		{
 			get
 			{
-				var prop = AccessTools.PropertyGetter(typeof(Application), "isBatchMode");
+				/*var prop = AccessTools.PropertyGetter(typeof(Application), "isBatchMode");
 				if (prop != null)
-					return (bool) prop.Invoke(null, null);
+					return (bool) prop.Invoke(null, null);*/
 				return SystemInfo.graphicsDeviceID == 0;
 			}
 		}
